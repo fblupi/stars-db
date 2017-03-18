@@ -1,0 +1,8 @@
+CREATE SCHEMA IF NOT EXISTS `stars-db` DEFAULT CHARACTER SET utf8 ;
+USE `stars-db` ;
+
+CREATE TABLE IF NOT EXISTS `stars-db`.`star` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `distance` FLOAT NULL,
+  PRIMARY KEY (`id`))
